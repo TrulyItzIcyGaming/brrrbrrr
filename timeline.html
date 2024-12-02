@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/images/logo.png" alt="My Logo" class="logo">
+            <div>
+                <h1>Timeline</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section id="timeline">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Homecoming Aftermath Cleanup</h3>
+                        <img id="event1-image" src="/images/homecomingCleanUp.png" alt="Homecoming Aftermath Cleanup">
+                        <p>This is after homecoming, key club got to cleanup the aftermath!</p>
+                        <span class="date">Oct 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Trunk Or Treat</h3>
+                        <img id="event2-image" src="/images/trunkOrTreat1.png" alt="Event Title 2">
+                        <p>I loved this, as I said "This was such an amazing time, all of the kids we got to bring a smile to!"</p>
+                        <span class="date">Oct 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Conference</h3>
+                        <img id="event3-image" src="/images/aiConference1.png" alt="Event Title 3">
+                        <p>as I said "It was an absolute honor and pleasure to represent Middletown during that, I thank you all for the opportunity and Mr. Moore for being the one to go with me. The cybersecurity program is doing me wonders and I owe so much of it to Mr. Moore and the school, thank you."</p>
+                        <span class="date">Nov 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Key Club Food Drive</h3>
+                        <img id="event4-image" src="/images/foodDrive1.png" alt="Event Title 4">
+                        <p>as I said "I am glad to be apart of this wonderful club, I hope they liked the candy basket and I hope all the food we received helps a lot of people 🙌"</p>
+                        <span class="date">Nov 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Brandon Rosen</p>
+    </footer>
+    <script>
+        const events = {
+            event1: [
+                "/images/homecomingCleanUp.png",
+                "/images/homecomingCleanUp2.png"
+            ],
+            event2: [
+                "/images/trunkOrTreat1.png",
+                "/images/trunkOrTreat2.png",
+                "/images/trunkOrTreat3.png",
+                "/images/trunkOrTreat4.png",
+                "/images/trunkOrTreat5.png",
+                "/images/trunkOrTreat6.png",
+                "/images/trunkOrTreat7.png"
+            ],
+            event3: [
+                "/images/aiConference1.png",
+                "/images/aiconference2.png"
+            ],
+            event4: [
+                "/images/foodDrive1.png",
+                "/images/foodDrive2.png",
+                "/images/foodDrive3.png",
+                "/images/foodDrive4.png"
+            ]
+        };
+
+        function changeImage(eventId, imageId) {
+            let currentIndex = 0;
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % events[eventId].length;
+                document.getElementById(imageId).src = events[eventId][currentIndex];
+            }, 5000);
+        }
+
+        changeImage('event1', 'event1-image');
+        changeImage('event2', 'event2-image');
+        changeImage('event3', 'event3-image');
+        changeImage('event4', 'event4-image');
+    </script>
+</body>
+</html>

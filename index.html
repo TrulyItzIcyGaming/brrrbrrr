@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/images/logo.png" alt="My Logo" class="logo">
+            <div>
+                <h1>Welcome to My Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Brandon Rosen, also known online as ItzIcyHere or ItzIcyGaming. I'm an 11th grader as of 2024/2025 who is passionate about tech, coding, and cybersecurity. One of my earlier projects, Shared Unblock Slides, was a major part of my life. It gained significant attention by providing access to unblocked games and resources at school, and while I still feel a sense of pride in the technical skill it took to create, I’ve grown to see it as a mistake.</p>
+            <p>The experience taught me valuable lessons in ethics and responsibility. It showed me the importance of using my skills for good rather than for rebellion or acts that could be seen as malicious. Since then, I’ve focused on positive growth, such as participating in my cybersecurity class, contributing to my community through Key Club, and being one of only five students in my state invited to speak on a panel at an AI Conference. These experiences have shaped my commitment to using technology to create a positive impact.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <a href="soon.html">
+                        <img src="https://img.freepik.com/free-vector/coming-soon-black-backgroun-design_1017-37033.jpg?t=st=1733133834~exp=1733137434~hmac=afacf697b9856c1041b079999b4739d5a2efeefbd378826f8ed1a5b11190351d&w=1380" alt="Project 1">
+                        <p>Timeline Of memories</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="soon.html">
+                        <img src="https://img.freepik.com/free-vector/coming-soon-black-backgroun-design_1017-37033.jpg?t=st=1733133834~exp=1733137434~hmac=afacf697b9856c1041b079999b4739d5a2efeefbd378826f8ed1a5b11190351d&w=1380" alt="Project 1">
+                        <p>A Emulator Site</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="#" onclick="showMinecraftServerIP(event)">
+                        <img src="/images/minecraft.png" alt="Project 1">
+                        <p>Minecraft Server</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="soon.html">
+                        <img src="https://img.freepik.com/free-vector/coming-soon-black-backgroun-design_1017-37033.jpg?t=st=1733133834~exp=1733137434~hmac=afacf697b9856c1041b079999b4739d5a2efeefbd378826f8ed1a5b11190351d&w=1380" alt="Project 1">
+                        <p>School Discord Server</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="soon.html">
+                        <img src="https://img.freepik.com/free-vector/coming-soon-black-backgroun-design_1017-37033.jpg?t=st=1733133834~exp=1733137434~hmac=afacf697b9856c1041b079999b4739d5a2efeefbd378826f8ed1a5b11190351d&w=1380" alt="Project 1">
+                        <p>Learning Courses & Resources Site</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="https://github.com/TrulyItzIcyGaming" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/brandon_scott_rosen/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.youtube.com/@OfficalItzIcyHere" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        <p>YouTube</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.twitch.tv/itzicygamingtv" target="_blank">
+                        <i class="fab fa-twitch"></i>
+                        <p>Twitch</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Brandon Rosen</p>
+    </footer>
+    <script>
+        function showMinecraftServerIP(event) {
+            event.preventDefault();
+            alert('IP: 104.238.205.83:28018');
+        }
+    </script>
+</body>
+</html>
