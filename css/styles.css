@@ -1,0 +1,196 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('../images/hero-bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Changed from right to left */
+    z-index: 10; /* Ensure the nav is on top */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Changed hover color to tomato */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    padding: 40px; /* Increased padding */
+    border-radius: 20px; /* Increased border radius */
+}
+
+.hero h1 {
+    font-size: 4em; /* Increased font size */
+    margin: 0;
+    animation: slideIn 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.8em; /* Increased font size */
+    margin: 15px 0; /* Increased margin */
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding */
+    background: #ff6347; /* Changed button color to tomato */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Increased border radius */
+    margin-top: 25px; /* Increased margin */
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e5533d; /* Darker hover color */
+}
+
+section {
+    padding: 70px 30px; /* Increased padding */
+    text-align: center;
+    margin: 30px 0; /* Increased margin */
+    border-radius: 15px; /* Increased border radius */
+    background: transparent; /* Make background transparent */
+    color: white; /* Ensure text is readable */
+}
+
+.tools, .projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tool, .project {
+    width: 200px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Darker background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Small border */
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.tool:hover, .project:hover {
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker on hover */
+}
+
+.tool img, .project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tool img:hover, .project img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 25px 0; /* Increased padding */
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-item {
+    background: rgba(0, 0, 0, 0.7); /* Darker background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Small border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.contact-item:hover {
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker on hover */
+}
+
+.contact-item i {
+    font-size: 2em; /* Adjusted size for icons */
+    margin-bottom: 10px; /* Space between icon and text */
+    transition: transform 0.3s;
+}
+
+.contact-item:hover i {
+    transform: scale(1.05);
+}
+
+footer p {
+    background: rgba(0, 0, 0, 0.7); /* Darker background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Small border */
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); } /* Increased translateY */
+    to { transform: translateY(0); }
+}
+
+.about-me {
+    background: rgba(0, 0, 0, 0.7); /* Darker background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Small border */
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
