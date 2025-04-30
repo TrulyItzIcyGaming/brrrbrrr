@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const projects = [
         { name: "Obfus8database", url: "https://obfus8database.brrrbrrr.tech/" },
-        { name: "CutieCookie Demo", url: "https://cutiecookie.brrrbrrr.tech/" },
+        { name: "CutieCookie Demo", url: "//https://cutiecookie.brrrbrrr.tech/" },
     ];
 
     const projectList = document.getElementById("project-list");
