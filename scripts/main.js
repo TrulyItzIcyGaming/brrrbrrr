@@ -11,7 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const link = document.createElement("a");
         link.href = project.url;
         link.textContent = project.name;
-        link.target = "_blank"; // Open in a new tab
+        link.target = "_blank";
+
+        // Add error handling for broken links
+        link.addEventListener("error", () => {
+            link.textContent += " (Link Broken)";
+            link.style.color = "red";
+        });
+
         listItem.appendChild(link);
         projectList.appendChild(listItem);
     });
